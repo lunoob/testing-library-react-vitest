@@ -6,6 +6,10 @@ export default defineConfig({
         environment: "jsdom",
         setupFiles: [
             `${__dirname}/test/setupFiles.ts`
-        ]
+        ],
+        alias: {
+            src: `${__dirname}/src`,
+            pages: `${__dirname}/src/pages`
+        }
     }
 })

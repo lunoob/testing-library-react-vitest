@@ -16,6 +16,12 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "types": ["vitest/globals"],
+    "baseUrl": "./src",
+    "paths": {
+      "src/*": [
+        "../src/*"
+      ]
+    }
   },
   "include": ["src", "test/setupFiles.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
